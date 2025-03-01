@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define o repositório do GitHub
-tput setaf 2; echo 'Acessando diretórios do GitHub e identificando última versão do binário'; tput sgr0
+tput setaf 2; echo 'Acessando diretórios do GitHub e identificando última versão do binário no repositório oficial da Magalu Cloud'; tput sgr0
 REPO="MagaluCloud/mgccli"
 
 # Obtém a última versão disponível (tag mais recente)
@@ -82,7 +82,7 @@ if command -v mgc &> /dev/null; then
     tput setaf 3;echo 'Para configurar o auto completion da CLI no Bash execute >>  sudo mgc completion bash > /etc/bash_completion.d/mgc'; tput sgr0
 else
     tput setaf 1; echo "❌ Falha na instalação do mgccli."; tput sgr0
-    tput setaf 1; echo "Script exclusivo para sistemas Ubuntu/Debian, verificar a versão do seu S.Ocd"; tput sgr0
+    tput setaf 1; echo "Script exclusivo para sistemas Ubuntu/Debian, verificar a versão do seu S.O ou outro erro na execução"; tput sgr0
     exit 1
 fi
 
