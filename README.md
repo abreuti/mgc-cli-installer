@@ -21,7 +21,7 @@ wget https://raw.githubusercontent.com/seu-repositorio/main/install_mgc.sh -O mg
 Dê permissão de execução:
 
 ```bash
-chmod +x install_mgc.sh
+chmod +x mgccli_upgrade.sh
 ```
 
 Execute o script:
