@@ -56,9 +56,15 @@ tput setaf 2; echo "🚀 Extraindo e Instalando o mgccli em ~/mgc_cli ..."; tput
 tar -xvf $OUTPUT_FILE -C ~/mgc_cli
 echo ''
 sleep 1
+echo 'Preparando a CLI ........'
 export PATH=$HOME/mgc_cli:$PATH
 echo 'export PATH=$HOME/mgc_cli:$PATH' >> ~/.bashrc 
+echo ''
 source ~/.bashrc
+mgc completion bash | sudo tee /etc/bash_completion.d/mgc > /dev/null
+echo ''
+source ~/.bashrc
+sleep 1
 
 # Verifica a instalação
 if command -v mgc &> /dev/null; then
