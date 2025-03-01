@@ -28,18 +28,8 @@ Execute o script:
 ```bash
 ./mgccli_upgrade.sh
 ```
-## 📥 Configuração inicial MGC CLI
-
-✅ Adiciona mgc_cli ao PATH para facilitar o uso.<br>
-✅ Garante que a configuração seja aplicada no seu shell (.bashrc ou .zshrc).<br>
-
-Execute o script:
-```bash
-./mgccli_setup.sh
-```
-
 ## 🎯 Uso
-Após a instalação + setup, feche e reabra o terminal ou rode:
+Após a instalação, feche e reabra o terminal ou rode:
 
 ```bash
 source ~/.bashrc  # Para usuários Bash  
