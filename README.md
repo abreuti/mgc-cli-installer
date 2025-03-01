@@ -35,3 +35,13 @@ Agora, você pode usar a CLI digitando:
 ```bash
 mgccli --help
 ```
+
+Para fazer a autenticação na CLI e ter sua credencial armazenada no arquivo de configuração, utilize o seguinte comando
+```bash
+mgc auth login
+```
+
+Este comando abrirá uma janela do seu navegador padrão diretamente no site do ID Magalu, onde você deverá fazer seu login.
+Ao terminar o procedimento e fechar o navegador, a CLI exibirá a confirmação e seu token de acesso
+Para mais informações, ou se deseja autenticar via API-KEY, acesse a documentação oficial para melhor entendimento
+https://docs.magalu.cloud/docs/devops-tools/cli-mgc/how-to/auth
