@@ -85,3 +85,5 @@ else
     tput setaf 1; echo "Script exclusivo para sistemas Ubuntu/Debian, verificar a versão do seu S.Ocd"; tput sgr0
     exit 1
 fi
+
+source ~/.bashrc
