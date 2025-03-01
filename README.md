@@ -45,3 +45,6 @@ Este comando abrirá uma janela do seu navegador padrão diretamente no site do 
 Ao terminar o procedimento e fechar o navegador, a CLI exibirá a confirmação e seu token de acesso.
 Para mais informações, ou se deseja autenticar via API-KEY, acesse a documentação oficial para melhor entendimento
 https://docs.magalu.cloud/docs/devops-tools/cli-mgc/how-to/auth
+
+## Aviso !
+Este script não é um produto oficial da Magalu Cloud (MGC). Ele é apenas uma ferramenta de automação criada para facilitar a instalação da MGC CLI.
