@@ -15,7 +15,7 @@ git clone https://github.com/abreuti/mgc-cli-installer.git && cd mgc-cli-install
 ```
 Ou baixe o script diretamente
 ```bash
-wget https://raw.githubusercontent.com/abreuti/mgc-cli-installer/mgccli_install.sh -O mgccli_install.sh
+wget https://github.com/abreuti/mgc-cli-installer/blob/main/mgccli_install.sh -O mgccli_install.sh
 ```
 
 Dê permissão de execução:
