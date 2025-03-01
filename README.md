@@ -1,10 +1,10 @@
-🚀 Instalador Automático da CLI da MGC para Debian/Ubuntu 
+# 🚀 Instalador Automático da CLI da MGC para Debian/Ubuntu 
 
 Este script automatiza a instalação da CLI da Magalu Cloud (MGC) em sistemas baseados em Debian, como Ubuntu. Ele baixa a versão mais recente da ferramenta e configura automaticamente o ambiente para melhor usabilidade.
 
-📥 Instalação MGC CLI
+## 📥 Instalação MGC CLI
 
-🔧 O que o script faz? <br>
+### 🔧 O que o script faz? <br>
 ✅ Baixa automaticamente a última versão da CLI da MGC.<br>
 ✅ Extrai e move os arquivos para o diretório ~/mgc_cli.<br>
 
@@ -25,17 +25,17 @@ Execute o script:
 ```bash
 ./mgccli_upgrade.sh
 ```
-📥 Configuração inicial MGC CLI
+## 📥 Configuração inicial MGC CLI
 
-✅ Adiciona mgc_cli ao PATH para facilitar o uso.
-✅ Garante que a configuração seja aplicada no seu shell (.bashrc ou .zshrc).
+✅ Adiciona mgc_cli ao PATH para facilitar o uso.<br>
+✅ Garante que a configuração seja aplicada no seu shell (.bashrc ou .zshrc).<br>
 
 Execute o script:
 ```bash
 ./mgccli_setup.sh
 ```
 
-🎯 Uso
+## 🎯 Uso
 Após a instalação + setup, feche e reabra o terminal ou rode:
 
 ```bash
