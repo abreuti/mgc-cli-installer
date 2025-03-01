@@ -11,8 +11,11 @@ Este script automatiza a instalação da CLI da Magalu Cloud (MGC) em sistemas b
 Clone este repositório ou baixe o script diretamente:
 
 ```bash
-git clone https://github.com/seu-repositorio.git && cd seu-repositorio
-wget https://raw.githubusercontent.com/seu-repositorio/main/install_mgc.sh -O install_mgc.sh
+git clone https://github.com/abreuti/mgc-cli-installer.git && cd #seu-repositorio
+```
+ou
+```bash
+wget https://raw.githubusercontent.com/seu-repositorio/main/install_mgc.sh -O mgccli_upgrade.sh
 ```
 
 Dê permissão de execução:
