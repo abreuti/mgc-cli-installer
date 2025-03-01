@@ -56,6 +56,9 @@ tput setaf 2; echo "🚀 Extraindo e Instalando o mgccli em ~/mgc_cli ..."; tput
 tar -xvf $OUTPUT_FILE -C ~/mgc_cli
 echo ''
 sleep 1
+export PATH=$HOME/mgc_cli:$PATH
+echo 'export PATH=$HOME/mgc_cli:$PATH' >> ~/.bashrc 
+source ~/.bashrc
 
 # Verifica a instalação
 if command -v mgc &> /dev/null; then
@@ -73,6 +76,6 @@ if command -v mgc &> /dev/null; then
     tput setaf 3;echo 'Para configurar o auto completion da CLI no Bash execute >>  sudo mgc completion bash > /etc/bash_completion.d/mgc'; tput sgr0
 else
     tput setaf 1; echo "❌ Falha na instalação do mgccli."; tput sgr0
-    tput setaf 1; echo "Script exclusivo para sistemas Ubuntu/Debian, verificar a versão do seu S.O"; tput sgr0
+    tput setaf 1; echo "Script exclusivo para sistemas Ubuntu/Debian, verificar a versão do seu S.Ocd"; tput sgr0
     exit 1
 fi
