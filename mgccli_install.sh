@@ -79,7 +79,7 @@ if command -v mgc &> /dev/null; then
     tput setaf 4;echo 'Ao terminar o procedimento e fechar o navegador, a CLI exibirá a confirmação e seu token de acesso'; tput sgr0
     tput setaf 4;echo 'Para mais informações, ou se deseja autenticar via API-KEY, acesse a documentação oficial para melhor entendimento >> https://docs.magalu.cloud/docs/devops-tools/cli-mgc/how-to/auth <<'; tput sgr0
     echo ''
-    tput setaf 3;echo 'Para configurar o auto completion da CLI no Bash execute >>  sudo mgc completion bash > /etc/bash_completion.d/mgc'; tput sgr0
+    tput setaf 3;echo 'Autocomplete configurado ! >>  sudo mgc completion bash > /etc/bash_completion.d/mgc'; tput sgr0
 else
     tput setaf 1; echo "❌ Falha na instalação do mgccli."; tput sgr0
     tput setaf 1; echo "Script exclusivo para sistemas Ubuntu/Debian, verificar a versão do seu S.O ou outro erro na execução"; tput sgr0
