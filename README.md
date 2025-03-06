@@ -22,7 +22,7 @@ chmod +x mgccli_install.sh
 
 Execute o script:
 ```bash
-./mgccli_install.sh
+bash mgccli_install.sh
 ```
 ## 🎯 Uso
 Após a instalação, feche e reabra o terminal ou rode:
