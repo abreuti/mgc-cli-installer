@@ -6,7 +6,7 @@ REPO="MagaluCloud/mgccli"
 
 # Obtém a última versão disponível (tag mais recente)
 LATEST_VERSION=$(curl -s "https://api.github.com/repos/$REPO/releases/latest" | grep -oP '"tag_name": "\K(.*?)(?=")')
-LATEST_VERSION=${LATEST_VERSION:1} #realizando uma substring para tirar o primeiro digito v
+#LATEST_VERSION=${LATEST_VERSION:1} #realizando uma substring para tirar o primeiro digito v
 echo ''
 
 # Verifica se conseguiu pegar a versão
@@ -19,7 +19,7 @@ echo "🔍 Última versão encontrada: $LATEST_VERSION"
 echo ''
 
 # Define a URL do binário (ajuste conforme necessário)
-DOWNLOAD_URL="https://github.com/$REPO/releases/download/v$LATEST_VERSION/mgccli_${LATEST_VERSION}_linux_amd64.tar.gz"
+DOWNLOAD_URL="https://github.com/$REPO/releases/download/$LATEST_VERSION/mgccli_${LATEST_VERSION}_linux_amd64.tar.gz"
 sleep 2
 echo 'Organizando arquivos ...'
 echo ''
@@ -75,13 +75,13 @@ if command -v mgc &> /dev/null; then
     sleep 1
     tput setaf 3; echo 'mgc auth login'; tput sgr0
     echo ''
-    tput setaf 4;echo 'Este comando abrirá uma janela do seu navegador padrão diretamente no site do ID Magalu, onde você deverá fazer seu login.'; tput sgr0
-    tput setaf 4;echo 'Ao terminar o procedimento e fechar o navegador, a CLI exibirá a confirmação e seu token de acesso'; tput sgr0
-    tput setaf 4;echo 'Para mais informações, ou se deseja autenticar via API-KEY, acesse a documentação oficial para melhor entendimento >> https://docs.magalu.cloud/docs/devops-tools/cli-mgc/how-to/auth <<'; tput sgr0
+    tput setaf 4; echo 'Este comando abrirá uma janela do seu navegador padrão diretamente no site do ID Magalu, onde você deverá fazer seu login.'; tput sgr0
+    tput setaf 4; echo 'Ao terminar o procedimento e fechar o navegador, a CLI exibirá a confirmação e seu token de acesso'; tput sgr0
+    tput setaf 4; echo 'Para mais informações, ou se deseja autenticar via API-KEY, acesse a documentação oficial para melhor entendimento >> https://docs.magalu.cloud/docs/devops-tools/cli-mgc/how-to/auth <<'; tput sgr0
     echo ''
-    tput setaf 3;echo 'Autocomplete configurado ! >>  sudo mgc completion bash > /etc/bash_completion.d/mgc'; tput sgr0
+    tput setaf 3; echo 'Autocomplete configurado ! >>  sudo mgc completion bash > /etc/bash_completion.d/mgc'; tput sgr0
     echo ''
-    echo setaf 3;echo 'Feche e abre o seu terminal para utilzar a CLI já configurada com auto-complete.'; tput sgr0
+    tput setaf 3; echo 'Feche e abre o seu terminal para utilzar a CLI já configurada com auto-complete.'; tput sgr0
 else
     tput setaf 1; echo "❌ Falha na instalação do mgccli."; tput sgr0
     tput setaf 1; echo "Script exclusivo para sistemas Ubuntu/Debian, verificar a versão do seu S.O ou outro erro na execução"; tput sgr0
